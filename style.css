@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+
+.footer{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(226, 224, 224);
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Arial;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.column > *:not(:last-child){
+    margin-bottom: 5px;
+}
+
+.column > *:first-child{
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(102, 102, 241);
+    font-size: 14px;
+}
+
+a:hover{
+    color: blue;
+}
+
+span:not(:first-child){
+    font-size: 14px;
+}
+
+@media(max-width:600px){
+    .footer{
+        flex-direction: column;
+    }
+
+    .column:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
